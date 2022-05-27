@@ -15,5 +15,5 @@ You can download the pretrained model from [here](https://drive.google.com/file/
 
 
 ## Acknowledgements
-- https://github.com/xahidbuffon/SUIM
+- https://github.com/trentqq/SUIM-E
 
