@@ -24,22 +24,25 @@
         ├── test-easy.txt
         ├── test-tough1.txt
         └── ...
-    ├── test_labelmap
-        ├── test-easy_label
+    ├── train_labelmap
+        ├── 32
             ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
             ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
             └── ...
-        ├── test-tough_label
+        ├── 16
             ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
             ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
             └── ...
-        └── ...
+        ├── 8
+            ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
+            ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
+            └── ...    
     ├── test_labelmap
         ├── test-easy_label
             ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
             ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
             └── ...
-        ├── test-tough_label
+        ├── test-tough1_label
             ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
             ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
             └── ...
@@ -48,10 +51,4 @@
 
 ```
 
-## Custom Datasets(without segmentation map)
-For other datasets without ground truth segmentation map, users can choose to:
-1. Manually mark the segmentation map
-2. Using [SUIM-Net](https://github.com/xahidbuffon/SUIM) to generate predicted semantic segmentation, by loading [pre-trained models](https://drive.google.com/drive/folders/1aoluekvB_CzoaqGhLutwtJptIOBasl7i).
-
-Then, organize the obtained segmentation map as described [above](#Data-Preparation).
 
