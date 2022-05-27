@@ -11,7 +11,7 @@ python train.py
 ```
 python test.py
 ```
-You can download the trained model from [here](https://drive.google.com/file/d/1vbY4GZ5-AwVKouDFHvFj9nL-grnIB2d3/view?usp=sharing).
+You can download the trained model from [here](https://drive.google.com/file/d/14JpdY4eciYTQQ5Wb4-_rgCZqnBQdOT9N/view?usp=sharing).
 
 
 ## Acknowledgements
