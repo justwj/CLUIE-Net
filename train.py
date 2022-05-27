@@ -17,7 +17,7 @@ import click
 import os
 from torchvision.models import vgg16
 import cv2
-from SDloss1 import SDLoss
+from SDloss import SDLoss
 import time
 from torchvision import transforms
 from PIL import Image
