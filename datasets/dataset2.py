@@ -45,7 +45,7 @@ class TrainDataset(Dataset):
         tmp_names = self.tmp_names[index]
         disimg_gt_names = self.disimg_gt_names[index]
 
-        disimg_gt_train32 = np.load('./data/train/32/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
+        disimg_gt_train32 = np.load('./data/train_labelmap/32/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
         disimg_gt_train32 = torch.tensor(disimg_gt_train32)
 
         disimg_gt_train16 = np.load('./data/train/16/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
