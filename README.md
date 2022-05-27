@@ -14,6 +14,4 @@ python test.py --test_path /path_to_data --fe_load_path /path_to_ckpt --fI_load_
 ```
 You can download the pretrained CLUIE-Net model from [here](https://drive.google.com/drive/folders/1uecaMgi3hqUy6PXIUUqAJaxkFNPLosAL?usp=sharing).
 
-## Acknowledgements
-- https://github.com/xahidbuffon/SUIM
 
