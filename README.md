@@ -5,11 +5,11 @@ You need to prepare datasets for following training and testing activities, the 
 
 ## Train
 ``` 
-python train.py --dataroot /path_to_data --name train_name --model SGUIENet --display_env display_env_name
+python train.py --train_path /path_to_data
 ```
 ## Test
 ```
-python test.py --dataroot /path_to_data --name test_name --model test_SGUIE 
+python test.py --test_path /path_to_data --fe_load_path /p
 ```
 You can download the trained model from [here](https://drive.google.com/file/d/1vbY4GZ5-AwVKouDFHvFj9nL-grnIB2d3/view?usp=sharing).
 
