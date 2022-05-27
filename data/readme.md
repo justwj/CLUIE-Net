@@ -4,40 +4,47 @@
 ### 2. The structure of data folder is as follows:
 ```
 ├── dataset_name
+    ├── E_img
+        ├── d_r_1_CLAHE.jpg
+        ├── d_r_1_DCP.jpg
+        └── ...
     ├── train
-        ├── raw
-            ├── im1.jpg
-            ├── im2.jpg
-            └── ...
-        ├── ref
-            ├── im1.jpg
-            ├── im2.jpg
-            └── ...
-        ├── mask
-            ├── BW
-                ├── im1.bmp
-                ├── im2.bmp
-                └── ...
-            ├── FV
-                ├── im1.bmp
-                ├── im2.bmp
-                └── ...
-            ├── ..
+        ├── d_r_3_.jpg
+        ├── d_r_5_.jpg
+        └── ...
     ├── test
-        ├── raw
-            ├── im1.jpg
-            ├── im2.jpg
+        ├── d_r_1_.jpg
+        ├── d_r_4_.jpg
+        └── ...
+    ├── train_txt
+        ├── train-easy.txt
+        ├── train-tough1.txt
+        └── ...
+    ├── test_txt
+        ├── test-easy.txt
+        ├── test-tough1.txt
+        └── ...
+    ├── test_labelmap
+        ├── test-easy_label
+            ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
+            ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
             └── ...
-        ├── mask
-            ├── BW
-                ├── im1.bmp
-                ├── im2.bmp
-                └── ...
-            ├── FV
-                ├── im1.bmp
-                ├── im2.bmp
-                └── ...
-            ├── ..
+        ├── test-tough_label
+            ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
+            ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
+            └── ...
+        └── ...
+    ├── test_labelmap
+        ├── test-easy_label
+            ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
+            ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
+            └── ...
+        ├── test-tough_label
+            ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
+            ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
+            └── ...
+        └── ...
+
 
 ```
 
