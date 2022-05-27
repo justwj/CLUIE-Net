@@ -48,12 +48,12 @@ class TrainDataset(Dataset):
         disimg_gt_train32 = np.load('./data/train_labelmap/32/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
         disimg_gt_train32 = torch.tensor(disimg_gt_train32)
 
-        disimg_gt_train16 = np.load('./data/train/16/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
+        disimg_gt_train16 = np.load('./data/train_labelmap/16/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
         disimg_gt_train16 = torch.tensor(disimg_gt_train16)
 
-        disimg_gt_train8 = np.load('./data/train/8/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
+        disimg_gt_train8 = np.load('./data/train_labelmap/8/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
         disimg_gt_train8 = torch.tensor(disimg_gt_train8)
-        disimg_gt_train1 = np.load('./data/train/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4], disimg_gt_names[:-4]))
+        disimg_gt_train1 = np.load('./data/labelmap/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4], disimg_gt_names[:-4])
         return raw_image,tmp_image, score_gt,disimg_gt_train32,disimg_gt_train16,disimg_gt_train8,disimg_gt_train1,raw_names,tmp_names,disimg_gt_names
     def __len__(self):
         return len(self.raw_images)
@@ -135,7 +135,7 @@ class TestDataset(Dataset):
         raw_names = self.raw_names[index]
         tmp_names = self.tmp_names[index]
         disimg_gt_names = self.disimg_gt_names[index]
-        disimg_gt_train1 = np.load('./data/wuli/QC-network/区分难度的模型/test-easy差异图真值/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
+        disimg_gt_train1 = np.load('./data/test_labelmap/test-easy_label/{}-{}-{}.npy'.format(raw_names[:-4], tmp_names[:-4],disimg_gt_names[:-4]))
         disimg_gt_train1 = torch.tensor(disimg_gt_train1)
         return raw_image,tmp_image, score_gt,disimg_gt_train1,raw_names,tmp_names,disimg_gt_names
     def __len__(self):
