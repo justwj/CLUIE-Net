@@ -4,7 +4,7 @@ This repository is the official PyTorch implementation of CLUIE-Net.
 You need to prepare datasets for following training and testing activities, the detailed information is at [Dataset Setup](data/README.md).
 
 ## Train
-Before starting training，you should download the pretrained [VGG16 model](https://drive.google.com/file/d/1tnuhKbe70qk-VkmnRsHgVrku8lE4pIie/view?usp=sharing) for compute the Content loss and the pretrained [RQSD-Net model](https://drive.google.com/file/d/14JpdY4eciYTQQ5Wb4-_rgCZqnBQdOT9N/view?usp=sharing) for compute the Superiority Discriminative loss, then put them in "./data/vgg" and "./data/QC_ckpt".
+Before starting training，you should download the pretrained [VGG16 model](https://drive.google.com/file/d/1tnuhKbe70qk-VkmnRsHgVrku8lE4pIie/view?usp=sharing) for compute the Content loss and the pretrained [RQSD-Net model](https://drive.google.com/file/d/14JpdY4eciYTQQ5Wb4-_rgCZqnBQdOT9N/view?usp=sharing) for compute the Superiority Discriminative loss, and then put them in "./data/vgg" and "./data/QC_ckpt".
 ``` 
 python train.py --train_path /path_to_data
 ```
