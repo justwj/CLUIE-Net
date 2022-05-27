@@ -47,6 +47,9 @@
             ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
             └── ...
         └── ...
+    ├── labelmap
+        ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
+        ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
 
 
 ```
