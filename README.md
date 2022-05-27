@@ -1,1 +1,1 @@
-# CLUIE-Net
+# RQSD-Net
