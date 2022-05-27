@@ -26,16 +26,16 @@
         └── ...
     ├── train_labelmap
         ├── 32
-            ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
-            ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
+            ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
+            ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
             └── ...
         ├── 16
-            ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
-            ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
+            ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
+            ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
             └── ...
         ├── 8
-            ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
-            ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
+            ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
+            ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
             └── ...    
     ├── test_labelmap
         ├── test-easy_label
