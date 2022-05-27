@@ -4,6 +4,7 @@ This repository is the official PyTorch implementation of CLUIE-Net.
 You need to prepare datasets for following training and testing activities, the detailed information is at [Dataset Setup](data/README.md).
 
 ## Train
+Before 
 ``` 
 python train.py --train_path /path_to_data
 ```
