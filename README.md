@@ -1,7 +1,7 @@
 # RQSD-Net
 This repository is the official PyTorch implementation of RQSD-Net.
 ## Dataset preparation 
-You need to prepare datasets for following training and testing activities, the detailed information is at [Dataset Setup](data/README.md).
+You need to prepare datasets for following training and testing activities, the detailed information is at [Dataset Setup](data/readme.md).
 
 ## Train
 ``` 
