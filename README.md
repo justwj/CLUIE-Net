@@ -1,5 +1,5 @@
 # Beyond Single Reference for Training: Underwater Image Enhancement via Comparative Learning
-This repository is the official PyTorch implementation of CLUIE-Net.
+This repository includes two branches.This branch is the official PyTorch implementation of CLUIE-Net.
 ## Dataset preparation 
 You need to prepare datasets for following training and testing activities, the detailed information is at [Dataset Setup](data/README.md).
 
