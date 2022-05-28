@@ -84,9 +84,9 @@ def train(train_name, continue_train):
         print('epoch {} use time:{}\n'.format(epoch, end_time - start_time))
         print('save Training model epoch' + str(epoch))
         torch.save(net.state_dict(), os.path.join(opt.model_save_path, train_name, 'net_idx' + str(epoch) + '.pkl'))
-        s_acc, d_acc = val(net)
-        status = "Epoch:{},disimg_mse_acc:{},score_acc:{}".format(epoch,d_acc,s_acc)
-        write_to_log('./checkpoint/evlacc.txt', status)
+#         s_acc, d_acc = val(net)
+#         status = "Epoch:{},disimg_mse_acc:{},score_acc:{}".format(epoch,d_acc,s_acc)
+#         write_to_log('./checkpoint/evlacc.txt', status)
     print('Finished Training')
     torch.save(net.state_dict(), os.path.join(opt.model_save_path, train_name, 'net_latest' + '.pkl'))
 
