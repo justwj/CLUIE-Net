@@ -43,7 +43,7 @@ def output(fE, fI, dataloader):
         gttestimg = Variable(gttestimg, requires_grad=False).cuda()
         fE_out, enc_outs = fE(inputtestimg)
         fI_out = to_img(fI(fE_out, enc_outs),inputtestimg.shape[2],inputtestimg.shape[3])
-        save_image(fI_out.cpu().data, 'CLUIE/{}'.format(testname[0]))
+        save_image(fI_out.cpu().data, './CLUIE/{}'.format(testname[0]))
         fI_out = (fI_out * 255).squeeze(0).cpu().data.numpy().transpose(1, 2, 0).astype(np.uint8)
         gttestimg = (gttestimg * 255).squeeze(0).cpu().data.numpy().transpose(1, 2, 0).astype(np.uint8)
         ssim_scores.append(ssim(fI_out, gttestimg, multichannel=True))
