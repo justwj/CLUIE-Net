@@ -52,8 +52,8 @@ def output(fE, fI, dataloader):
     return sum(ssim_scores) / len(dataloader), sum(psnr_scores) / len(dataloader), sum(mse_scores) / len(dataloader)
 @click.command()
 @click.argument('name', default='UIEBD')
-@click.option('--test_path', default='/data/UIEBD/test')
-@click.option('--gt_path', default='/data/UIEBD/gt')
+@click.option('--test_path', default='./data/UIEBD/test')
+@click.option('--gt_path', default='./data/UIEBD/gt')
 @click.option('--fe_load_path', default='./ckpt/fE_latest.pth')
 @click.option('--fi_load_path', default='./ckpt/fI_latest.pth')
 def main(name, test_path, gt_path, fe_load_path, fi_load_path):
