@@ -1,6 +1,4 @@
-# 2021/4/8
-# author:wuli
-# 本程序用于自定义Superiority Discriminative loss损失函数
+# Superiority Discriminative loss
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
@@ -63,9 +61,7 @@ class SDLoss(nn.Module):
         low_disimg9,mid_disimg9,hig_disimg9,disimg9 = loss_net(out, loss9img)
         low_disimg10,mid_disimg10,hig_disimg10,disimg10 = loss_net(out, loss10img)
         low_disimg11,mid_disimg11,hig_disimg11,disimg11 = loss_net(out, loss11img)
-        #disimg12 = loss_net(out, loss12img)
         zero = torch.ones_like(disimg1)
-        #zero = torch.zeros_like(disimg1)
         disimg1 = torch.where(disimg1 > 0, zero, zero - disimg1)
         disimg2 = torch.where(disimg2 > 0, zero, zero - disimg2)
         disimg3 = torch.where(disimg3 > 0, zero, zero - disimg3)
@@ -78,10 +74,9 @@ class SDLoss(nn.Module):
         disimg10 = torch.where(disimg10 > 0, zero, zero - disimg10)
         disimg11 = torch.where(disimg11 > 0, zero, zero - disimg11)
 
-        #print(disimg1 + disimg2 + disimg3 + disimg4 + disimg5 + disimg6 + disimg7 + disimg8 + disimg9 + disimg10 + disimg11)
         loss = torch.mean(
             disimg1 + disimg2 + disimg3 + disimg4 + disimg5 + disimg6 + disimg7 + disimg8 + disimg9 + disimg10 + disimg11)
-        #print(loss)
+
         return loss
 
 
