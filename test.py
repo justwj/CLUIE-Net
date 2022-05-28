@@ -68,7 +68,7 @@ def test(path):
 if __name__ == "__main__":
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     continue_train = False
-    path = torch.load(os.path.join('./pretrainedmodel/net_idx12.pkl'))
+    path = torch.load(os.path.join('./checkpoint/QC/net_latest.pkl'))
     s_acc, d_acc = test(path)
     status = "disimg_mse_acc:{},score_acc:{}".format(d_acc, s_acc)
     print(status)
