@@ -4,27 +4,27 @@
 ### 2. The structure of data folder is as follows:
 ```
 ├── dataset_name
-    ├── E_img
+    ├── E_imgs
         ├── d_r_1_CLAHE.jpg
         ├── d_r_1_DCP.jpg
         └── ...
-    ├── train
+    ├── train-validation_imgs
         ├── d_r_3_.jpg
         ├── d_r_5_.jpg
         └── ...
-    ├── test
+    ├── test_imgs
         ├── d_r_1_.jpg
         ├── d_r_4_.jpg
         └── ...
-    ├── train_txt
-        ├── train-easy.txt
-        ├── train-tough1.txt
+    ├── train-validation_pairs
+        ├── train-Cons.txt
+        ├── train-Cons-L1.txt
         └── ...
-    ├── test_txt
-        ├── test-easy.txt
-        ├── test-tough1.txt
+    ├── test_pairs
+        ├── test-Cons.txt
+        ├── test-Cons-L1.txt
         └── ...
-    ├── train_labelmap
+    ├── train-validation-GT-QSmaps
         ├── 32
             ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
             ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
@@ -37,12 +37,12 @@
             ├── w_r_299_ULAP-w_r_299_FUSION-w_r_299_FUSION.npy
             ├── w_r_299_ULAP-w_r_299_CLAHE-w_r_299_FUSION.npy
             └── ...    
-    ├── test_labelmap
-        ├── test-easy_label
+    ├── test-GT-QSmaps
+        ├── test-Cons-GT-QSmaps
             ├── d_r_1_CLAHE-d_r_1_GCHE-d_r_1_GCHE.npy
             ├── d_r_1_DCP-d_r_1_GCHE-d_r_1_GCHE.npy
             └── ...
-        ├── test-tough1_label
+        ├── test-Cons-L1-GT-QSmaps
             ├── d_r_26_CLAHE-d_r_26_DIVE-d_r_26_GCHE.npy
             ├── d_r_26_CLAHE-d_r_26_RETINEX-d_r_26_GCHE.npy
             └── ...
