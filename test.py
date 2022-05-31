@@ -58,7 +58,7 @@ def output(fE, fI, dataloader,output_path):
 @click.option('--gt_path', default='./data/test_gt_demo')
 @click.option('--fe_load_path', default='./ckpt/fE_590.pth')
 @click.option('--fi_load_path', default='./ckpt/fI_590.pth')
-@click.option('--output_path', default='./outputdemo')
+@click.option('--output_path', default='./output')
 
 
 def main(name, test_path, gt_path, fe_load_path, fi_load_path,output_path):
