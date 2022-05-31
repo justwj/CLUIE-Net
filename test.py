@@ -32,7 +32,7 @@ def write_to_log(log_file_path, status):
 @click.option('--test_path', default='./data/RQSD-UI/E_imgs')
 @click.option('--txt_path', default='./data/RQSD-UI/test_pairs/test-Cons.txt')
 @click.option('--gt_path', default='./data/RQSD-UI/test-GT-QSmaps/test-Cons-GT-QSmaps')
-@click.option('--modelsave_path', default='./checkpoint/net_idx12.pkl')
+@click.option('--modelsave_path', default='./checkpoint/net_latest.pkl')
 
 
 def test(test_path,txt_path,gt_path,modelsave_path):
