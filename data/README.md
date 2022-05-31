@@ -1,4 +1,4 @@
-## Data Preparation
+<!-- ## Data Preparation
 ### 1. Download the dataset [UIEBD](https://drive.google.com/file/d/1lWDnqBhmmMM3qL-PAWRHoy3w1wzmM4fk/view?usp=sharing).
 
 ### 2. The structure of data folder is as follows:
@@ -20,7 +20,7 @@
         ├── 2_img_.png
         ├── 3_img_.png
         └── ...
-
+ -->
 
 
 ```
