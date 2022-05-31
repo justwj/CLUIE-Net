@@ -1,7 +1,7 @@
 # Beyond Single Reference for Training: Underwater Image Enhancement via Comparative Learning
 This repository includes two branches. This branch is the official PyTorch implementation of CLUIE-Net, another branch is the official PyTorch implementation of RQSD-Net.
 
-## Test
+## Test_Demo
 ```
 python test.py --test_path /path_to_data --fe_load_path /path_to_ckpt --fI_load_path /path_to_ckpt 
 ```
