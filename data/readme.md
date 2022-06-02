@@ -8,14 +8,6 @@
         ├── d_r_1_CLAHE.jpg
         ├── d_r_1_DCP.jpg
         └── ...
-    ├── train-validation_imgs
-        ├── d_r_3_.jpg
-        ├── d_r_5_.jpg
-        └── ...
-    ├── test_imgs
-        ├── d_r_1_.jpg
-        ├── d_r_4_.jpg
-        └── ...
     ├── train-validation_pairs
         ├── train-Cons.txt
         ├── train-Cons-L1.txt
