@@ -14,6 +14,4 @@ python test.py  --txt_path /path_to_data --gt_path /path_to_data --modelsave_pat
 You can download the pretrained **RQSD-Net** model from [here](https://drive.google.com/file/d/14JpdY4eciYTQQ5Wb4-_rgCZqnBQdOT9N/view?usp=sharing).
 
 
-## Acknowledgements
-- https://github.com/trentqq/SUIM-E
 
