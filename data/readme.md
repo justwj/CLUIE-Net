@@ -1,5 +1,5 @@
 ## Data Preparation
-### 1. Download the regional quality-superiority dataset for underwater images [RQSD-UI](https://drive.google.com/drive/folders/1gA3Ic7yOSbHd3w214-AgMI9UleAt4bRM?usp=sharing).
+### 1. Download the regional quality-superiority dataset for underwater images [RQSD-UI](https://drive.google.com/file/d/1lWDnqBhmmMM3qL-PAWRHoy3w1wzmM4fk/view?usp=sharing).
 
 ### 2. The structure of data folder is as follows:
 ```
